@@ -1,7 +1,7 @@
 # Database Monitoring and Performance Optimization
 
 ## Overview
-In this project, I aimed to implement comprehensive monitoring and performance optimization solutions for MySQL databases, focusing on ensuring efficient operations and scalability. This hands-on experience allowed me to deepen my understanding of database management, monitoring tools, and automation processes.
+In this project, I aimed to implement comprehensive monitoring and performance optimization solutions for MySQL databases, focusing on ensuring efficient operations and scalability. This hands-on experience allowed me to deepen my understanding of database management, monitoring tools, and automation processes. By integrating powerful monitoring tools such as Prometheus and Grafana, I enhanced visibility into the database’s performance, making it easier to identify issues and optimize query efficiency. Additionally, the use of Ansible and Bash scripting for automation ensured that tasks like backups and maintenance were carried out seamlessly and without manual intervention.
 
 ## Features
 - **MySQL Database Monitoring**: Real-time monitoring of MySQL databases using Prometheus for metrics scraping and Grafana for visualization.
@@ -48,3 +48,30 @@ This project enhanced my skills in database management, automation, and monitori
 - **Bash**: Scripting language for automating database tasks.
 - **Cron Jobs**: Scheduling tool for automating periodic tasks.
 
+## How to Run
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/username/Database-Monitoring-Project.git
+    ```
+
+2. Navigate into the project directory:
+    ```bash
+    cd Database-Monitoring-Project
+    ```
+
+3. **Install Docker and Docker Compose** if not already installed:
+    ```bash
+    # Follow the installation instructions at https://docs.docker.com/get-docker/
+    ```
+
+4. **Build and start the containers**:
+    ```bash
+    docker-compose up -d
+    ```
+
+5. Once the containers are up and running, you can access **Grafana** at `http://localhost:3000` (default username/password: admin/admin).
+
+6. **Monitor Database Metrics**: Prometheus will start scraping metrics from MySQL, and the Grafana dashboard will visualize them.
+
+> **Important**: Ensure Docker and MySQL configurations are correct before running locally. You'll also need to adjust environment variables for security and privacy.
